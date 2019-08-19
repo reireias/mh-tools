@@ -1,0 +1,22 @@
+---
+language: node_js
+node_js:
+  - 'stable'
+env:
+  secure: s0j8+kX/5qJQb2DLUVSHCrFF+OkG8p//NW+lZA2GFX3JI8/beyhcJLzN+t4o9JJN2ND4n+v3e7j3BoPyE+27wdy7DF34S1OBnJ0OkIoLWUnD0LxKact068+6AV6/MxTTMrCDXWyYTb/4m7unuInLphPBGzZqrFelEpNKgh30iGMoClqr0DkpnMifoWYnhxACsrw3PfsXNyqO5iXvVxC8jdzWNrF3NrEd/5xr2+HjB7YQATpda+qqsl/CuEd5+jpSckwsr46i8urMiO0aQmNbkaxbj4FA0NG1xGtW8kJkbA4D/fK9z+nJeQJ2P6AfSG/2Pp13tQ0tIHgksl15we7jTbHw1OaxNZRjk2bKDL77yQS5TqWOAXeuYhrb9lj+hlY6d7l+S9fCSSyfJ2KIsQVCHQX9WouEjFY75IhJqNIbYv0oAjQiPIu8tidh2oBNfc8pHiLMAQ1tb1dRakoHog1KUiTpvUBq5B/5uF1x36WxEktjW/1YwB1L5uR78Y5sZymx4qKSLyetU7MONFRWWA5xJ6cDgm9QFDdtTqG1GmVPL8M3UOI7y5T7dqKDBh+npHhj74c5sZLN3NR3ZGbGJR4yQTjwgOmR2ZBMYMC5+lPeOYtl24FgRF2Beuseds4EIaKUMPSQjcW6ZrDRK9KQjsRdqo3n3JGav131wZZBztYX8jw=
+cache: yarn
+script:
+  - yarn lint
+  - yarn test
+  - yarn generate
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN
+  local_dir: dist
+  on:
+    branch: master
+notifications:
+  email: false
+  slack:
+    secure: jrmFAeACji+Ln+FiKdx5BzLj23yGKoXFChgjxXDTC3lsaN9TCzFf38IxP0ROCxbPBkM35VUrfXZrHy7hC6puz18IgkUseIyU/WpsIKE5JiEagyv4YX/yjWM7GrwUPEAymmqZR0mv35aZ+rPewyWp4wOUy1p4BbKPIAwzy34oDE8yE5T1yO9LJ20qkHVL7ZPpR2VgR4AoTQgQME21mdB5VZYWV3yEse9oDFJbVfchTvdnOs1TvcqUX3i/ApospNmaOeqyol8ZTlF2JciiZDyaS2LsIyA/OKBoT72AYF+Q+XfR0JECOdd6I7C8HbZz2T81sPkH/UZLDSjESIWTaONyRqAAGJ2ot7iryb19M82gz5wSxN74VNLP/jWpnBu9IOEk8PvJCaxO9aUditxxm3W5WVx3MzruWKQ4yhGletNeSohEsEluxcz5osJN+JX4oW0boicNEpEQPwKk/gKgADfPCGFKfcySG+3K2DVWPcyu91w6uFc7jiUe+Tyoe25tkGipFevbmF4c+wpqlmCWZXTeWSSjiYJklA17fqpTXHEmIBf5PN9WJRf947GyFUK9PSDan3NP4I75r99cmfCbLMkPFzIRxk5xamOGF+bK30JAH5Drq5wiwrtZy/vJU6maMRFIH+HPDth9Z0zjhjxY1CEDpMe0wBk0ObhG2wfr8strf9E=
