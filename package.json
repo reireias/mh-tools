@@ -15,7 +15,10 @@
   },
   "dependencies": {
     "@nuxtjs/pwa": "^3.0.0-0",
-    "nuxt": "^2.0.0"
+    "apexcharts": "^3.8.4",
+    "nuxt": "^2.0.0",
+    "vue-apexcharts": "^1.4.0",
+    "vuetify": "^2.0.7"
   },
   "devDependencies": {
     "@nuxtjs/eslint-config": "^1.0.1",
