@@ -7,7 +7,6 @@ env:
 cache: yarn
 script:
   - yarn lint
-  - yarn test
   - yarn generate
 deploy:
   provider: pages
