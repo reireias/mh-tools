@@ -54,6 +54,7 @@ export default {
     setSeries() {
       this.series = null
       this.base = Number(this.base)
+      this.critical = Number(this.critical)
       const series = this.criticalSkills.map((criticalSkill) => {
         const obj = { name: criticalSkill.name }
         obj.data = this.attackSkills.map((attackSkill) => {
