@@ -1,5 +1,12 @@
 <template>
   <div>
+    <div class="display-3">MHW - 攻撃 or 見切り</div>
+    <div class="headline">
+      スキル「攻撃」と「見切り」をどれくらい積むか悩んだときに用の期待値計算機です。
+      <br />
+      物理ダメージのみに対応しています。
+    </div>
+
     <v-text-field v-model="base" type="number" label="武器倍率"></v-text-field>
     <v-text-field
       v-model="critical"
@@ -100,5 +107,9 @@ export default {
 <style>
 .result-box {
   margin-top: 10px;
+}
+.headline {
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 </style>
