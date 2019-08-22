@@ -28,8 +28,8 @@
         </v-col>
         <v-col>
           <v-select
-            v-model="superCritical"
-            :items="superCriticalSkills"
+            v-model="criticalBoost"
+            :items="criticalBoostSkills"
             item-text="name"
             item-value="value"
           ></v-select>
@@ -61,7 +61,7 @@ export default {
     return {
       base: 200,
       critical: 0,
-      superCritical: 1.25,
+      criticalBoost: 1.25,
       attackSkills: [
         { attack: 0, critical: 0 },
         { attack: 3, critical: 0 },
@@ -102,7 +102,7 @@ export default {
         '見切りLv6',
         '見切りLv7'
       ],
-      superCriticalSkills: [
+      criticalBoostSkills: [
         { name: '超会心Lv0', value: 1.25 },
         { name: '超会心Lv1', value: 1.3 },
         { name: '超会心Lv2', value: 1.35 },
@@ -125,7 +125,7 @@ export default {
           const expected = calculateExpectedValue(
             attack,
             critical,
-            this.superCritical
+            this.criticalBoost
           )
           row.push((Math.round(expected * 100) / 100).toFixed(2))
         })
