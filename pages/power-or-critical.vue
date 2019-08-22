@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="title-text">MHW - 攻撃 or 見切り</div>
+    <div class="title-text">MHW IB - 攻撃 or 見切り</div>
     <div class="description-text">
       スキル「攻撃」と「見切り」をどれくらい積むか悩んだときに用の期待値計算機です。
       <br />
@@ -61,13 +61,13 @@ export default {
       ],
       criticalSkills: [
         { critical: 0 },
-        { critical: 3 },
-        { critical: 6 },
+        { critical: 5 },
         { critical: 10 },
         { critical: 15 },
         { critical: 20 },
         { critical: 25 },
-        { critical: 30 }
+        { critical: 30 },
+        { critical: 40 }
       ],
       criticalLabels: [
         '見切りLv0',
