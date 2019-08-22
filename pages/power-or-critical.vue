@@ -7,13 +7,35 @@
       物理ダメージのみに対応しています。
     </div>
 
-    <v-text-field v-model="base" type="number" label="武器倍率"></v-text-field>
-    <v-text-field
-      v-model="critical"
-      type="number"
-      label="会心率"
-      suffix="%"
-    ></v-text-field>
+    <v-container>
+      <v-row>
+        <v-col>
+          <v-text-field
+            v-model="base"
+            type="number"
+            label="武器倍率"
+            class="number-input"
+          ></v-text-field>
+        </v-col>
+        <v-col>
+          <v-text-field
+            v-model="critical"
+            type="number"
+            label="会心率"
+            suffix="%"
+            class="number-input"
+          ></v-text-field>
+        </v-col>
+        <v-col>
+          <v-select
+            v-model="superCritical"
+            :items="superCriticalSkills"
+            item-text="name"
+            item-value="value"
+          ></v-select>
+        </v-col>
+      </v-row>
+    </v-container>
     <v-btn color="primary" @click="calculate">計算</v-btn>
     <div class="result-box">
       <center>
@@ -39,6 +61,7 @@ export default {
     return {
       base: 200,
       critical: 0,
+      superCritical: 1.25,
       attackSkills: [
         { attack: 0, critical: 0 },
         { attack: 3, critical: 0 },
@@ -79,6 +102,12 @@ export default {
         '見切りLv6',
         '見切りLv7'
       ],
+      superCriticalSkills: [
+        { name: '超会心Lv0', value: 1.25 },
+        { name: '超会心Lv1', value: 1.3 },
+        { name: '超会心Lv2', value: 1.35 },
+        { name: '超会心Lv3', value: 1.4 }
+      ],
       data: null
     }
   },
@@ -93,7 +122,11 @@ export default {
             Number(this.critical) +
             attackSkill.critical +
             criticalSkill.critical
-          const expected = calculateExpectedValue(attack, critical, 1.25)
+          const expected = calculateExpectedValue(
+            attack,
+            critical,
+            this.superCritical
+          )
           row.push((Math.round(expected * 100) / 100).toFixed(2))
         })
         data.push(row)
@@ -112,6 +145,9 @@ export default {
   font-size: 24px;
   margin-top: 20px;
   margin-bottom: 20px;
+}
+.number-input input {
+  text-align: right;
 }
 .result-box {
   margin-top: 10px;
