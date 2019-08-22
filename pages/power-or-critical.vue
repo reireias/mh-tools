@@ -1,7 +1,7 @@
 <template>
   <div>
-    <div class="display-3">MHW - 攻撃 or 見切り</div>
-    <div class="headline">
+    <div class="title-text">MHW - 攻撃 or 見切り</div>
+    <div class="description-text">
       スキル「攻撃」と「見切り」をどれくらい積むか悩んだときに用の期待値計算機です。
       <br />
       物理ダメージのみに対応しています。
@@ -105,11 +105,23 @@ export default {
 </script>
 
 <style>
+.title-text {
+  font-size: 64px;
+}
+.description-text {
+  font-size: 24px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
 .result-box {
   margin-top: 10px;
 }
-.headline {
-  margin-top: 20px;
-  margin-bottom: 20px;
+@media screen and (min-width: 0px) and (max-device-width: 640px) {
+  .title-text {
+    font-size: 32px;
+  }
+  .description-text {
+    font-size: 16px;
+  }
 }
 </style>
