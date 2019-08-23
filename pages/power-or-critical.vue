@@ -147,6 +147,9 @@ export default {
   components: {
     ColorTable
   },
+  head: {
+    title: 'power or critical'
+  },
   data() {
     return {
       base: 200,
