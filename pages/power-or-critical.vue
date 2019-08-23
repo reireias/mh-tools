@@ -7,91 +7,7 @@
       物理ダメージのみに対応しています。
     </div>
 
-    <v-expansion-panels popout>
-      <v-expansion-panel>
-        <v-expansion-panel-header
-          >基礎攻撃力の計算方法</v-expansion-panel-header
-        >
-        <v-expansion-panel-content>
-          <v-row>
-            <v-col>
-              <p>基礎攻撃力 = 表示攻撃力 / 武器係数</p>
-              <table>
-                <caption>
-                  武器係数
-                </caption>
-                <tr>
-                  <td>大剣</td>
-                  <td>4.8</td>
-                </tr>
-                <tr>
-                  <td>太刀</td>
-                  <td>3.3</td>
-                </tr>
-                <tr>
-                  <td>片手剣</td>
-                  <td>1.4</td>
-                </tr>
-                <tr>
-                  <td>双剣</td>
-                  <td>1.4</td>
-                </tr>
-                <tr>
-                  <td>ハンマー</td>
-                  <td>5.2</td>
-                </tr>
-                <tr>
-                  <td>狩猟笛</td>
-                  <td>4.2</td>
-                </tr>
-                <tr>
-                  <td>ランス</td>
-                  <td>2.3</td>
-                </tr>
-                <tr>
-                  <td>ガンランス</td>
-                  <td>2.3</td>
-                </tr>
-                <tr>
-                  <td>スラッシュアックス</td>
-                  <td>3.5</td>
-                </tr>
-                <tr>
-                  <td>チャージアックス</td>
-                  <td>3.6</td>
-                </tr>
-                <tr>
-                  <td>操虫棍</td>
-                  <td>3.1</td>
-                </tr>
-                <tr>
-                  <td>ライトボウガン</td>
-                  <td>1.3</td>
-                </tr>
-                <tr>
-                  <td>ヘビィボウガン</td>
-                  <td>1.5</td>
-                </tr>
-                <tr>
-                  <td>弓</td>
-                  <td>1.2</td>
-                </tr>
-              </table>
-            </v-col>
-            <v-col>
-              <p>力の爪：+6</p>
-              <p>力の護符：+9</p>
-              <p>食事大：+15</p>
-              <p>怪力の種：+10</p>
-              <p>怪力の粉塵：+10</p>
-              <p>フルチャージLv1：+5</p>
-              <p>フルチャージLv2：+10</p>
-              <p>フルチャージLv3：+20</p>
-            </v-col>
-          </v-row>
-        </v-expansion-panel-content>
-      </v-expansion-panel>
-    </v-expansion-panels>
+    <description></description>
 
     <v-container>
       <v-row>
@@ -142,10 +58,12 @@
 
 <script>
 import ColorTable from '@/components/ColorTable'
+import Description from '@/components/Description'
 import { calculateExpectedValue } from '@/utils/expected'
 export default {
   components: {
-    ColorTable
+    ColorTable,
+    Description
   },
   head: {
     title: 'power or critical'
@@ -247,7 +165,7 @@ export default {
 }
 @media screen and (min-width: 0px) and (max-device-width: 640px) {
   .title-text {
-    font-size: 32px;
+    font-size: 28px;
   }
   .description-text {
     font-size: 16px;
