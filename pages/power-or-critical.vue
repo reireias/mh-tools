@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="title-text">MHW IB - 攻撃 or 見切り</div>
+    <div class="title-text primary--text">MHW IB - 攻撃 or 見切り</div>
     <div class="description-text">
       スキル「攻撃」と「見切り」をどれくらい積むか悩んだときに用の期待値計算機です。
       <br />
@@ -13,7 +13,7 @@
           <v-text-field
             v-model="base"
             type="number"
-            label="武器倍率"
+            label="基礎攻撃力"
             class="number-input"
           ></v-text-field>
         </v-col>
@@ -36,7 +36,11 @@
         </v-col>
       </v-row>
     </v-container>
-    <v-btn color="primary" @click="calculate">計算</v-btn>
+
+    <center>
+      <v-btn color="primary" @click="calculate">計算</v-btn>
+    </center>
+
     <div class="result-box">
       <center>
         <color-table
