@@ -75,7 +75,7 @@ export default {
         content: 'https://reireias.github.io/mh-tools/ogp.png'
       }
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
+    link: [{ rel: 'icon', type: 'image/x-icon', href: './favicon.ico' }]
   },
   /*
    ** Customize the progress-bar color
