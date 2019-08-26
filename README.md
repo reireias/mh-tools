@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/reireias/mh-tools.svg?branch=master)](https://travis-ci.org/reireias/mh-tools)
 # mh-tools
 
 > Tools for MH.
