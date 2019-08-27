@@ -13,7 +13,7 @@ describe('ColorTable', () => {
       propsData: props
     })
     expect(wrapper.isVueInstance()).toBeTruthy()
-    expect(wrapper.element).toMatchSnapshot()
+    expect(wrapper.html()).toMatchSnapshot()
   })
 
   describe('maxValues', () => {
