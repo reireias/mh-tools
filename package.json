@@ -21,7 +21,7 @@
   "devDependencies": {
     "@nuxtjs/eslint-config": "^1.0.1",
     "@nuxtjs/eslint-module": "^1.1.0",
-    "@nuxtjs/vuetify": "^1.8.5",
+    "@nuxtjs/vuetify": "^1.8.6",
     "@vue/test-utils": "^1.0.0-beta.29",
     "babel-eslint": "^10.0.3",
     "babel-jest": "^24.1.0",
