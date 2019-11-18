@@ -5,7 +5,11 @@ describe('ColorTable', () => {
   const props = {
     xlabels: ['A', 'B', 'C'],
     ylabels: ['X', 'Y', 'Z'],
-    data: [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+    data: [
+      [1, 2, 3],
+      [4, 5, 6],
+      [7, 8, 9]
+    ]
   }
 
   it('should be vue instance', () => {
