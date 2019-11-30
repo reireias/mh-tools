@@ -40,7 +40,7 @@
     </v-container>
 
     <center>
-      <v-btn color="primary" @click="calculate">計算</v-btn>
+      <v-btn @click="calculate" color="primary">計算</v-btn>
     </center>
 
     <div class="result-box">
