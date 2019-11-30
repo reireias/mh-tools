@@ -2,6 +2,7 @@
   "name": "mh-tools",
   "version": "1.0.0",
   "description": "Tools for MH.",
+  "license": "MIT",
   "author": "reireias",
   "private": true,
   "scripts": {
