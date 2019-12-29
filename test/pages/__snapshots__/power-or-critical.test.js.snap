@@ -55,7 +55,7 @@ exports[`power-or-critical should be vue instance 1`] = `
                 </div>
                 <div class=\\"v-input__append-inner\\">
                   <div class=\\"v-input__icon v-input__icon--append\\"><i aria-hidden=\\"true\\" class=\\"v-icon notranslate mdi mdi-menu-down theme--light\\"></i></div>
-                </div>
+                </div><input type=\\"hidden\\" value=\\"1.25\\">
               </div>
               <div class=\\"v-menu\\">
                 <div class=\\"v-menu__content theme--light \\" style=\\"max-height: 304px; min-width: 0px; max-width: auto; top: 12px; left: 0px; transform-origin: top left; z-index: 0; display: none;\\"></div>
