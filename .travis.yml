@@ -12,7 +12,7 @@ script:
   - yarn generate
 deploy:
   provider: pages
-  cleanup: false
+  cleanup: true
   github_token: $GITHUB_TOKEN
   local_dir: dist
   on:
