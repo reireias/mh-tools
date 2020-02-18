@@ -10,7 +10,7 @@ exports[`power-or-critical should be vue instance 1`] = `
   </div>
   <div class=\\"v-item-group theme--light v-expansion-panels v-expansion-panels--popout\\">
     <div aria-expanded=\\"false\\" class=\\"v-expansion-panel\\"><button type=\\"button\\" class=\\"v-expansion-panel-header\\">基礎攻撃力の計算方法<div class=\\"v-expansion-panel-header__icon\\"><i aria-hidden=\\"true\\" class=\\"v-icon notranslate mdi mdi-chevron-down theme--light\\"></i></div></button>
-      <div class=\\"v-expansion-panel-content\\" style=\\"display: none;\\"></div>
+      <!---->
     </div>
   </div>
   <div class=\\"container\\">
@@ -51,14 +51,14 @@ exports[`power-or-critical should be vue instance 1`] = `
             <div role=\\"button\\" aria-haspopup=\\"listbox\\" aria-expanded=\\"false\\" aria-owns=\\"list-17\\" class=\\"v-input__slot\\">
               <div class=\\"v-select__slot\\">
                 <div class=\\"v-select__selections\\">
-                  <div class=\\"v-select__selection v-select__selection--comma\\">超会心Lv0</div><input id=\\"input-17\\" readonly=\\"readonly\\" type=\\"text\\" aria-readonly=\\"true\\" autocomplete=\\"off\\">
+                  <div class=\\"v-select__selection v-select__selection--comma\\">超会心Lv0</div><input id=\\"input-17\\" readonly=\\"readonly\\" type=\\"text\\" aria-readonly=\\"false\\" autocomplete=\\"off\\">
                 </div>
                 <div class=\\"v-input__append-inner\\">
                   <div class=\\"v-input__icon v-input__icon--append\\"><i aria-hidden=\\"true\\" class=\\"v-icon notranslate mdi mdi-menu-down theme--light\\"></i></div>
                 </div><input type=\\"hidden\\" value=\\"1.25\\">
               </div>
               <div class=\\"v-menu\\">
-                <div class=\\"v-menu__content theme--light \\" style=\\"max-height: 304px; min-width: 0px; max-width: auto; top: 12px; left: 0px; transform-origin: top left; z-index: 0; display: none;\\"></div>
+                <!---->
               </div>
             </div>
             <div class=\\"v-text-field__details\\">
