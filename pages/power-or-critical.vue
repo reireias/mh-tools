@@ -40,7 +40,7 @@
     </v-container>
 
     <center>
-      <v-btn @click="calculate" color="primary">計算</v-btn>
+      <v-btn color="primary" @click="calculate">計算</v-btn>
     </center>
 
     <div class="result-box">
@@ -64,9 +64,6 @@ export default {
   components: {
     ColorTable,
     Description
-  },
-  head: {
-    title: 'power or critical'
   },
   data() {
     return {
@@ -144,6 +141,9 @@ export default {
       })
       this.data = data
     }
+  },
+  head: {
+    title: 'power or critical'
   }
 }
 </script>
