@@ -142,8 +142,10 @@ export default {
       this.data = data
     }
   },
-  head: {
-    title: 'power or critical'
+  head() {
+    return {
+      title: 'power or critical'
+    }
   }
 }
 </script>
