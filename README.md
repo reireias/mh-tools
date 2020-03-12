@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/reireias/mh-tools.svg?branch=master)](https://travis-ci.org/reireias/mh-tools)
+![deploy](https://github.com/reireias/mh-tools/workflows/deploy/badge.svg) ![test](https://github.com/reireias/mh-tools/workflows/test/badge.svg)
 # mh-tools
 
 > Tools for MH.
