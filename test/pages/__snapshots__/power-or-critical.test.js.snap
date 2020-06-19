@@ -9,8 +9,12 @@ exports[`power-or-critical should be vue instance 1`] = `
     物理ダメージのみに対応しています。
   </div>
   <div class=\\"v-item-group theme--light v-expansion-panels v-expansion-panels--popout\\">
-    <div aria-expanded=\\"false\\" class=\\"v-expansion-panel\\"><button type=\\"button\\" class=\\"v-expansion-panel-header\\">基礎攻撃力の計算方法<div class=\\"v-expansion-panel-header__icon\\"><i aria-hidden=\\"true\\" class=\\"v-icon notranslate mdi mdi-chevron-down theme--light\\"></i></div></button>
-      <!---->
+    <div aria-expanded=\\"false\\" class=\\"v-expansion-panel\\"><button type=\\"button\\" class=\\"v-expansion-panel-header\\">基礎攻撃力の計算方法<transition-stub name=\\"fade-transition\\">
+          <div class=\\"v-expansion-panel-header__icon\\"><i aria-hidden=\\"true\\" class=\\"v-icon notranslate mdi mdi-chevron-down theme--light\\"></i></div>
+        </transition-stub></button>
+      <transition-stub name=\\"expand-transition\\">
+        <!---->
+      </transition-stub>
     </div>
   </div>
   <div class=\\"container\\">
@@ -23,7 +27,7 @@ exports[`power-or-critical should be vue instance 1`] = `
             </div>
             <div class=\\"v-text-field__details\\">
               <div class=\\"v-messages theme--light\\">
-                <div class=\\"v-messages__wrapper\\"></div>
+                <transition-group-stub tag=\\"div\\" name=\\"message-transition\\" class=\\"v-messages__wrapper\\"></transition-group-stub>
               </div>
             </div>
           </div>
@@ -39,7 +43,7 @@ exports[`power-or-critical should be vue instance 1`] = `
             </div>
             <div class=\\"v-text-field__details\\">
               <div class=\\"v-messages theme--light\\">
-                <div class=\\"v-messages__wrapper\\"></div>
+                <transition-group-stub tag=\\"div\\" name=\\"message-transition\\" class=\\"v-messages__wrapper\\"></transition-group-stub>
               </div>
             </div>
           </div>
@@ -63,7 +67,7 @@ exports[`power-or-critical should be vue instance 1`] = `
             </div>
             <div class=\\"v-text-field__details\\">
               <div class=\\"v-messages theme--light\\">
-                <div class=\\"v-messages__wrapper\\"></div>
+                <transition-group-stub tag=\\"div\\" name=\\"message-transition\\" class=\\"v-messages__wrapper\\"></transition-group-stub>
               </div>
             </div>
           </div>
