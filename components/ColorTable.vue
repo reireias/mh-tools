@@ -25,20 +25,20 @@ export default {
   props: {
     xlabels: {
       type: Array,
-      required: true
+      required: true,
     },
     ylabels: {
       type: Array,
-      required: true
+      required: true,
     },
     data: {
       type: Array,
-      required: true
-    }
+      required: true,
+    },
   },
   data() {
     return {
-      colors: ['#BBDEFB', '#F0F4C3', '#F8BBD0']
+      colors: ['#BBDEFB', '#F0F4C3', '#F8BBD0'],
     }
   },
   computed: {
@@ -55,7 +55,7 @@ export default {
       return values.map((subValues) => {
         return Math.max(...subValues)
       })
-    }
+    },
   },
   methods: {
     getStyle(row, col, value) {
@@ -64,8 +64,8 @@ export default {
         style += 'font-weight: bold;'
       }
       return style
-    }
-  }
+    },
+  },
 }
 </script>
 

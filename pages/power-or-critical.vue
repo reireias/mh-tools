@@ -63,7 +63,7 @@ import { calculateExpectedValue } from '@/utils/expected'
 export default {
   components: {
     ColorTable,
-    Description
+    Description,
   },
   data() {
     return {
@@ -78,7 +78,7 @@ export default {
         { attack: 12, critical: 5 },
         { attack: 15, critical: 5 },
         { attack: 18, critical: 5 },
-        { attack: 21, critical: 5 }
+        { attack: 21, critical: 5 },
       ],
       attackLabels: [
         '攻撃Lv0',
@@ -88,7 +88,7 @@ export default {
         '攻撃Lv4',
         '攻撃Lv5',
         '攻撃Lv6',
-        '攻撃Lv7'
+        '攻撃Lv7',
       ],
       criticalSkills: [
         { critical: 0 },
@@ -98,7 +98,7 @@ export default {
         { critical: 20 },
         { critical: 25 },
         { critical: 30 },
-        { critical: 40 }
+        { critical: 40 },
       ],
       criticalLabels: [
         '見切りLv0',
@@ -108,15 +108,15 @@ export default {
         '見切りLv4',
         '見切りLv5',
         '見切りLv6',
-        '見切りLv7'
+        '見切りLv7',
       ],
       criticalBoostSkills: [
         { name: '超会心Lv0', value: 1.25 },
         { name: '超会心Lv1', value: 1.3 },
         { name: '超会心Lv2', value: 1.35 },
-        { name: '超会心Lv3', value: 1.4 }
+        { name: '超会心Lv3', value: 1.4 },
       ],
-      data: null
+      data: null,
     }
   },
   methods: {
@@ -140,13 +140,13 @@ export default {
         data.push(row)
       })
       this.data = data
-    }
+    },
   },
   head() {
     return {
-      title: 'power or critical'
+      title: 'power or critical',
     }
-  }
+  },
 }
 </script>
 

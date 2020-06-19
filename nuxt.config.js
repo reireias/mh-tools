@@ -4,8 +4,8 @@ const routerBase =
   process.env.DEPLOY_ENV === 'GH_PAGES'
     ? {
         router: {
-          base: '/mh-tools/'
-        }
+          base: '/mh-tools/',
+        },
       }
     : {}
 
@@ -23,65 +23,65 @@ export default {
       {
         hid: 'description',
         name: 'description',
-        content: process.env.npm_package_description || ''
+        content: process.env.npm_package_description || '',
       },
       { name: 'msapplication-TileColor', content: '#304ffe' },
       { name: 'theme-color', content: '#304ffe' },
       {
         hid: 'og:site_name',
         property: 'og:site_name',
-        content: 'MH Tools'
+        content: 'MH Tools',
       },
       { hid: 'og:type', property: 'og:type', content: 'website' },
       {
         hid: 'og:url',
         property: 'og:url',
-        content: 'https://reireias.github.io/mh-tools'
+        content: 'https://reireias.github.io/mh-tools',
       },
       { hid: 'og:title', property: 'og:title', content: 'MH Tools' },
       {
         hid: 'og:description',
         property: 'og:description',
-        content: 'Tools for MH.'
+        content: 'Tools for MH.',
       },
       {
         hid: 'og:image',
         property: 'og:image',
-        content: 'https://reireias.github.io/mh-tools/ogp.png'
+        content: 'https://reireias.github.io/mh-tools/ogp.png',
       },
       {
         hid: 'twitter:card',
         name: 'twitter:card',
-        content: 'summary_large_image'
+        content: 'summary_large_image',
       },
       {
         hid: 'twitter:site',
         name: 'twitter:site',
-        content: '@reirei_As'
+        content: '@reirei_As',
       },
       {
         hid: 'twitter:title',
         name: 'twitter:title',
-        content: 'MH Tools'
+        content: 'MH Tools',
       },
       {
         hid: 'twitter:description',
         name: 'twitter:description',
-        content: 'Tools for MH.'
+        content: 'Tools for MH.',
       },
       {
         hid: 'twitter:image',
         name: 'twitter:image',
-        content: 'https://reireias.github.io/mh-tools/ogp.png'
-      }
+        content: 'https://reireias.github.io/mh-tools/ogp.png',
+      },
     ],
     link: [
       {
         rel: 'icon',
         type: 'image/x-icon',
-        href: 'https://reireias.github.io/mh-tools/favicon.ico'
-      }
-    ]
+        href: 'https://reireias.github.io/mh-tools/favicon.ico',
+      },
+    ],
   },
   /*
    ** Customize the progress-bar color
@@ -101,7 +101,7 @@ export default {
   devModules: [
     // Doc: https://github.com/nuxt-community/eslint-module
     '@nuxtjs/eslint-module',
-    '@nuxtjs/vuetify'
+    '@nuxtjs/vuetify',
   ],
   /*
    ** Nuxt.js modules
@@ -123,10 +123,10 @@ export default {
           info: colors.teal.lighten1,
           warning: colors.amber.base,
           error: colors.deepOrange.accent4,
-          success: colors.green.accent3
-        }
-      }
-    }
+          success: colors.green.accent3,
+        },
+      },
+    },
   },
   /*
    ** Build configuration
@@ -135,7 +135,7 @@ export default {
     /*
      ** You can extend webpack config here
      */
-    extend(config, ctx) {}
+    extend(config, ctx) {},
   },
-  ...routerBase
+  ...routerBase,
 }

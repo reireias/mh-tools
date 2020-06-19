@@ -8,13 +8,13 @@ describe('ColorTable', () => {
     data: [
       [1, 2, 3],
       [4, 5, 6],
-      [7, 8, 9]
-    ]
+      [7, 8, 9],
+    ],
   }
 
   it('should be vue instance', () => {
     const wrapper = mount(ColorTable, {
-      propsData: props
+      propsData: props,
     })
     expect(wrapper.isVueInstance()).toBeTruthy()
     expect(wrapper.html()).toMatchSnapshot()
@@ -23,7 +23,7 @@ describe('ColorTable', () => {
   describe('maxValues', () => {
     it('should be max value array', () => {
       const wrapper = mount(ColorTable, {
-        propsData: props
+        propsData: props,
       })
       expect(wrapper.vm.maxValues).toStrictEqual([1, 4, 7, 8, 9])
     })
