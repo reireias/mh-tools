@@ -12,7 +12,7 @@ describe('power-or-critical', () => {
     const vuetify = new Vuetify()
     const wrapper = mount(target, {
       localVue,
-      vuetify
+      vuetify,
     })
     expect(wrapper.isVueInstance()).toBeTruthy()
     expect(wrapper.html()).toMatchSnapshot()

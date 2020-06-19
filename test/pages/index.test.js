@@ -14,8 +14,8 @@ describe('power-or-critical', () => {
       localVue,
       vuetify,
       stubs: {
-        NuxtLink: RouterLinkStub
-      }
+        NuxtLink: RouterLinkStub,
+      },
     })
     expect(wrapper.isVueInstance()).toBeTruthy()
     expect(wrapper.html()).toMatchSnapshot()
