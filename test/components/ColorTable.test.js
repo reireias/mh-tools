@@ -16,7 +16,6 @@ describe('ColorTable', () => {
     const wrapper = mount(ColorTable, {
       propsData: props,
     })
-    expect(wrapper.isVueInstance()).toBeTruthy()
     expect(wrapper.html()).toMatchSnapshot()
   })
 
