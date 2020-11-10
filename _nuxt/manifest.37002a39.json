@@ -49,6 +49,5 @@
   "start_url": "/mh-tools/?standalone=true",
   "display": "standalone",
   "background_color": "#ffffff",
-  "theme_color": "#fff",
   "lang": "en"
 }
